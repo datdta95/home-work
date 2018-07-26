@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class OperatorHomeWork {
+public class HinhChuNhat {
     public static void main(String[] args) {
         float chieudai;
         float chieurong;
