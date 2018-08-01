@@ -123,6 +123,10 @@ public class NumbersReader {
             }
             System.out.println(name1 + " " + name2);
         } else if (number < 1000) {
+
+            if (number == 100) {
+                System.out.println("MỘT TRĂM");
+            }
             int chuSoHangTram = number / 100;
             int remainer = number % 100;
             int chuSoHangChuc = remainer / 10;
@@ -160,7 +164,11 @@ public class NumbersReader {
             }
             switch (chuSoHangChuc) {
                 case 0:
-                    name2="LINH ";
+                    if (chuSoHangDonVi == 0) {
+                        name2 = "";
+                    } else {
+                        name2 = "LINH ";
+                    }
                     break;
                 case 1:
                     name2="MƯỜI ";
@@ -191,7 +199,11 @@ public class NumbersReader {
             }
             switch (chuSoHangDonVi) {
                 case 0:
-                    name3=" MƯƠI";
+                    if (chuSoHangChuc == 0) {
+                        name3 = "";
+                    } else {
+                        name3=" MƯƠI";
+                    }
                     break;
                 case 1:
                     name3 = ONE;
