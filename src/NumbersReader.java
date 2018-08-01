@@ -123,10 +123,6 @@ public class NumbersReader {
             }
             System.out.println(name1 + " " + name2);
         } else if (number < 1000) {
-
-            if (number == 100) {
-                System.out.println("MỘT TRĂM");
-            }
             int chuSoHangTram = number / 100;
             int remainer = number % 100;
             int chuSoHangChuc = remainer / 10;
