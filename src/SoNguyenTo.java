@@ -10,7 +10,7 @@ public class SoNguyenTo {
         } else {
             int count = 2;
             boolean check = true;
-            while (count < Math.sqrt(soNguyenTo)) {
+            while (count <= Math.sqrt(soNguyenTo)) {
                 if (soNguyenTo % count == 0) {
                     check = false;
                     break;
