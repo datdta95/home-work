@@ -5,7 +5,7 @@ public class HienThiSoNguyenToNhoHon100 {
         System.out.println("Các số nguyên tố nhỏ hơn 100 là:");
         for (int i = 2; i < 100; i++) {
             boolean check = true;
-            for (int count =2;count <= Math.sqrt(i);count++) {
+            for (int count = 2; count <= Math.sqrt(i); count++) {
                 if (i % count == 0) {
                     check = false;
                     break;
@@ -15,6 +15,5 @@ public class HienThiSoNguyenToNhoHon100 {
                 System.out.println(i);
             }
         }
-
     }
 }
