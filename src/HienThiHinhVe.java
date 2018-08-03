@@ -43,6 +43,32 @@ public class HienThiHinhVe {
                     }
                     break;
                 case 3:
+                    System.out.println("Tam giác vuông cân có góc vuông ở vị trí top-right");
+                    System.out.println("Nhập vào độ dài cạnh góc vuông");
+                    height = scanner.nextInt();
+                    for (int i = 1; i <= height; i++) {
+                        for (int j = 1; j <= height; j++) {
+                            if (j >= i) {
+                                System.out.print("* ");
+                            } else System.out.print("  ");
+
+                        }
+                        System.out.println();
+                    }
+                    break;
+                case 4:
+                    System.out.println("Tam giác vuông cân có góc vuông ở vị trí top-left");
+                    System.out.println("Nhập vào độ dài cạnh góc vuông");
+                    height = scanner.nextInt();
+                    for (int i = 1; i <= height; i++) {
+                        for (int j = 1; j <= height - i + 1; j++) {
+                            System.out.print("* ");
+                        }
+                        System.out.println();
+                    }
+
+                    break;
+                case 6:
                     System.out.println("Tam giác cân");
                     System.out.println("Nhập vào độ dài cạnh đáy của tam giác cân:");
                     int c = scanner.nextInt();
@@ -63,4 +89,3 @@ public class HienThiHinhVe {
         }
     }
 }
-
